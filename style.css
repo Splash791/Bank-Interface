@@ -1,0 +1,94 @@
+body {
+    background-color: #1a2a6c; /* dark blue fallback */
+  
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05) 10px,
+        transparent 10px,
+        transparent 20px
+      ),
+      radial-gradient(circle at center, 
+        #0047ab 0%,      /* strong blue center */
+        #5a8ee6 40%,     /* medium blue mid */
+        #1a2a6c 100%     /* dark blue edges */
+      );
+    
+    background-repeat: repeat;
+    background-size: auto;
+  }
+  
+  
+.container-box {
+    max-width: 320px;
+    margin: 100px auto 0;
+    padding: 20px;
+    transform: translateY(130px); /* push down by 60px */
+    background-color: rgba(255, 255, 255, 0.8); /* translucent white */
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.title {
+    font-size: 35px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    gap: 12px;
+}
+
+.username,
+.password,
+.loginButton {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.create-account {
+    margin-top: 10px;
+    font-size: 0.85em;
+    color: #0077cc;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.create-account:hover {
+color: #005fa3;
+text-decoration: underline;
+}
+.loginButton {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} 
+
+.forgot-password{
+    font-size: 0.85em;
+    color: #0077cc;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    transition: color 0.3s ease;
+}  
